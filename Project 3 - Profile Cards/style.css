@@ -241,3 +241,66 @@
 .fa-google-plus-g {
     color: #dd4b39;
 }
+
+@media (max-width: 1300px) {
+    .heading {
+        font-size: 65px;
+        width: 80%;
+    }
+
+    .cards-wrapper {
+        width: 100%;
+        top: 32%;
+    }
+
+    .image-top {
+        height: 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        height: 100%;
+    }
+
+    .heading {
+        width: 90%;
+    }
+
+    .heading::after {
+        height: 50px;
+    }
+
+    .cards-wrapper {
+        flex-wrap: wrap;
+        padding: 300px 0 200px 0;
+    }
+
+    .card {
+        margin: 0 30px 50px 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .heading {
+        font-size: 60px;
+    }
+
+    .heading::after {
+        height: 47px;
+    }
+}
+
+@media (max-width: 450px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .heading::after {
+        height: 32px;
+    }
+
+    .cards-wrapper {
+        padding: 250px 0 150px 0;
+    }
+}
