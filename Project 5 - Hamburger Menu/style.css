@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)), url(images/banner-bg.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    top: 20px;
+    left: 50px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.hamburger-menu {
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.line {
+    width: inherit;
+    height: 5px;
+    background-color: #16c3cf;
+    border-radius: 25px;
+}
+
+.line-2 {
+    height: 3px;
+}
+
+.btn-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+}
+
+.banner-btn {
+    width: 350px;
+    height: 100px;
+    background: linear-gradient(#16c3cf, #156169);
+    border: none;
+    outline: none;
+    font-family: 'Slabo 27px', serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+    text-shadow: 0 10px 10px black;
+    cursor: pointer;
+    transform: rotateX(70deg) rotateZ(30deg);
+    transform-style: preserve-3d;
+    transition: transform .3s;
+}
+
+.banner-btn:hover {
+    transform: rotateX(30deg) rotateZ(0deg);
+}
+
+.banner-btn::before {
+    content: '';
+    width: 100%;
+    height: 15px;
+    background-color: #156469;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+
+.banner-btn::after {
+    content: '';
+    width: 15px;
+    height: 100%;
+    background-color: #16c3cf;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+}
+
+.top-nav {
+    height: 15vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(images/nav-bg.jpeg) no-repeat 50% 0;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+}
+
+.nav-list {
+    list-style: none;
+    width: 80%;
+    margin: auto;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-list li {
+    perspective: 500px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'Slabo 27px', serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #cccccc;
+    background-color: black;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    display: block;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: top;
+    transition: transform .3s;
+}
+
+@media (max-width: 1000px) {
+    .nav-link {
+        font-size: 20px;
+        padding: 3px 6px;
+    }
+    
+}
+
+.nav-link:hover {
+    transform: rotateX(90deg);
+}
+
+.nav-link::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    background-color: black;
+    padding: inherit;
+    color: #16c3cf;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+}
+
+.bottom-nav {
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(images/nav-bg.jpeg) no-repeat 50% -15vh;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+}
+
+.icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.icon-link {
+    width: 200px;
+    height: 200px;
+    border: 8px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.icon-link::before {
+    content: '';
+    height: 30px;
+    width: 5px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+}
+
+.icon-link::after {
+    content: '';
+    height: 30px;
+    width: 5px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+.icon-link i {
+    color: white;
+    font-size: 50px;
+    width: 150px;
+    height: 150px;
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    text-shadow: 0 10px 20px rgba(0,0,0,.5);
+}
