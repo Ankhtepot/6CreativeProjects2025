@@ -1,7 +1,16 @@
-/Project 1 - InvisibleCard/.idea/copilot.data.migration.agent.xml
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# Useful .gitignore templates: https://github.com/github/gitignore
+node_modules
+dist
+.cache
+/.idea/copilot.data.migration.agent.xml
 /Project 5 - Hamburger Menu/.idea/copilot.data.migration.agent.xml
+/.idea/copilot.data.migration.ask.xml
 /Project 4 - Slideshow/.idea/copilot.data.migration.ask.xml
 /Project 5 - Hamburger Menu/.idea/copilot.data.migration.ask.xml
+/.idea/copilot.data.migration.ask2agent.xml
 /Project 4 - Slideshow/.idea/copilot.data.migration.ask2agent.xml
 /Project 5 - Hamburger Menu/.idea/copilot.data.migration.ask2agent.xml
+/.idea/copilot.data.migration.edit.xml
 /Project 5 - Hamburger Menu/.idea/copilot.data.migration.edit.xml
